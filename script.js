@@ -1,6 +1,7 @@
 let todoItemsContainer=document.getElementById('todoItemsContainer');
 let addButton=document.querySelector('.add-todo-button');
 let inputElement=document.querySelector('#todosUserInput');
+let saveTodoButton=document.getElementById("saveButton");
 let todoList=[
     {
         text:"Learn HTML",
@@ -86,3 +87,7 @@ addButton.addEventListener('click',()=>{
     createNewItem(newTodo);
     inputElement.value="";
 });
+
+saveTodoButton.addEventListener('click',()=>{
+    localStorage.setItem("todoList",JSON.stringify(todoList));
+})
