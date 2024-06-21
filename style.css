@@ -47,6 +47,7 @@ body{
 }
 .add-todo-button{
     color:white;
+    outline: none;
     background-color:#4c63b6;
     font-family: "Roboto";
     border-width:0px;
@@ -107,4 +108,7 @@ body{
 }
 .delete-icon{
     padding:15px;
+}
+.checked{
+    text-decoration: line-through;
 }
