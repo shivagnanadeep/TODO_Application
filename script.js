@@ -107,7 +107,8 @@ addButton.addEventListener('click',()=>{
     todosCount=todoList.length+1;
     let newTodo={
         text:taskName,
-        uniqueNo:todosCount
+        uniqueNo:todosCount,
+        isChecked:false
     };
     todoList.push(newTodo);
     createNewItem(newTodo);
